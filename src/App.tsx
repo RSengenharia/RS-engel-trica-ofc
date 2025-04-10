@@ -7,7 +7,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 bg-[#07111c] shadow z-50">
         <div className="max-w-[1100px] mx-auto px-4 py-2 flex justify-between items-center">
           <div className="bg-white p-[2px] rounded-md shadow">
-            <img src="/LOGO.png" alt="Logo RS Engenharia" className="h-10 md:h-12 object-contain max-w-full" />
+            <img src="/LOGO.png" alt="Logo RS Engenharia" className="h-10 md:h-12 object-contain max-w-[180px]" />
           </div>
           <div className="space-x-4 text-sm md:text-base">
             <a href="#inicio" className="hover:text-yellow-400">Início</a>
