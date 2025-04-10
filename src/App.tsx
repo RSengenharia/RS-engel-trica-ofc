@@ -13,6 +13,7 @@ export default function App() {
             <a href="#inicio" className="hover:text-yellow-400">Início</a>
             <a href="#servicos" className="hover:text-yellow-400">Serviços</a>
             <a href="#contato" className="hover:text-yellow-400">Contato</a>
+            <a href="#projetos" className="hover:text-yellow-400">Projetos</a>
           </div>
         </div>
       </nav>
@@ -34,7 +35,14 @@ export default function App() {
 
           <div className="space-y-12">
             {/* Serviços Individuais */}
-            {["residencial", "comercial", "industrial", "aumento-de-carga", "automacao", "laudos-tecnicos"].map((id, index) => {
+            {[
+              "residencial",
+              "comercial",
+              "industrial",
+              "aumento-de-carga",
+              "automacao",
+              "laudos-tecnicos"
+            ].map((id, index) => {
               const servicos = [
                 {
                   id: "residencial",
@@ -127,6 +135,14 @@ export default function App() {
           >
             Fale conosco no WhatsApp
           </a>
+        </section>
+
+        {/* Projetos */}
+        <section id="projetos" className="mb-20">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Projetos Executados</h2>
+          <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
+            Em breve adicionaremos fotos e descrições detalhadas de nossos projetos já executados. Acompanhe essa seção para conhecer mais sobre nosso trabalho prático.
+          </p>
         </section>
       </main>
     </div>
