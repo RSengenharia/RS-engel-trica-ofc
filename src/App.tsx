@@ -84,7 +84,7 @@ export default function App() {
         </section>
 
         {/* Contato */}
-        <section id="contato">
+        <section id="contato" className="mb-20">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Fale Conosco</h2>
           <p className="mb-1">📧 contato@rsengenharia.com.br</p>
           <p className="mb-4">📞 (51) 98031-8366</p>
