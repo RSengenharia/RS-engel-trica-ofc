@@ -34,7 +34,7 @@ export default function App() {
 
           <div className="space-y-12">
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Residencial" alt="Projeto Residencial" className="rounded-xl mb-4 mx-auto" />
+              <img src="/residencial.png" alt="Projeto Residencial" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Projetos Elétricos Residenciais</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Elaboração de projetos completos para casas, apartamentos e condomínios. Cada detalhe é pensado para garantir conforto, economia e facilidade na execução, atendendo às normas da NBR 5410.
@@ -42,7 +42,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Comercial" alt="Projeto Comercial" className="rounded-xl mb-4 mx-auto" />
+              <img src="/comercial.png" alt="Projeto Comercial" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Projetos Comerciais</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Soluções inteligentes para lojas, escritórios e estabelecimentos em geral, com foco em segurança, expansão futura e redução de consumo energético.
@@ -50,7 +50,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Industrial" alt="Projeto Industrial" className="rounded-xl mb-4 mx-auto" />
+              <img src="/industrial.png" alt="Projeto Industrial" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Projetos Industriais</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Atuamos no dimensionamento de transformadores, quadros, cabos, proteções e automação de processos, garantindo eficiência e segurança em ambientes industriais.
@@ -58,7 +58,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Aumento+de+Carga" alt="Aumento de Carga" className="rounded-xl mb-4 mx-auto" />
+              <img src="/aumento-de-carga.png" alt="Aumento de Carga" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Aumento de Carga e Regularização</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Realizamos estudos e adequações para ampliação de carga junto à concessionária, com ART, cálculos e diagramas. O cálculo de demanda custa R$ 1.000,00, e o projeto completo, R$ 1.900,00. Projetos completos prediais com elétrica e telecom: R$ 3.400,00.
@@ -66,7 +66,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Automacao" alt="Automação" className="rounded-xl mb-4 mx-auto" />
+              <img src="/automacao.png" alt="Automação" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Automação Industrial</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Integramos sensores, CLPs, inversores e painéis de comando para otimizar processos industriais, melhorando desempenho, segurança e padronização da produção.
@@ -74,7 +74,7 @@ export default function App() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/600x300?text=Laudos+Tecnicos" alt="Laudos Técnicos" className="rounded-xl mb-4 mx-auto" />
+              <img src="/laudos-tecnicos.png" alt="Laudos Técnicos" className="rounded-xl mb-4 mx-auto" />
               <h3 className="text-xl font-bold mb-2">Laudos Técnicos</h3>
               <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto">
                 Emitimos laudos para regularização, inspeção predial e avaliação técnica de sistemas elétricos, com base nas normas vigentes e análises especializadas.
