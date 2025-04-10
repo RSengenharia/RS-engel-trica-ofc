@@ -5,6 +5,5 @@ html, body {
   background-color: #0b1c2c;
   color: white;
   overflow-x: hidden; /* Esta linha elimina a rolagem lateral */
-  max-width: 100vw;    /* Garante que nada ultrapasse a largura da tela */
-  box-sizing: border-box; /* Ajuda a controlar o tamanho de tudo que usa padding e border */
+
 }
