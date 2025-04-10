@@ -7,7 +7,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 bg-[#07111c] shadow z-50">
         <div className="max-w-[1100px] mx-auto px-4 py-2 flex justify-between items-center">
           <div className="bg-white p-[2px] rounded-md shadow">
-            <img src="/LOGO.png" alt="Logo RS Engenharia" className="h-10 md:h-12 object-contain max-w-full" />
+            <img src="/LOGO.png" alt="Logo RS Engenharia" className="h-10 md:h-12 object-contain max-w-[180px]" />
           </div>
           <div className="space-x-4 text-sm md:text-base">
             <a href="#inicio" className="hover:text-yellow-400">Início</a>
@@ -35,14 +35,8 @@ export default function App() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">Nossos Serviços</h2>
 
             <div className="space-y-12">
-              {[
-                "residencial",
-                "comercial",
-                "industrial",
-                "aumento-de-carga",
-                "automacao",
-                "laudos-tecnicos"
-              ].map((id, index) => {
+              {/* Serviços Individuais */}
+              {["residencial", "comercial", "industrial", "aumento-de-carga", "automacao", "laudos-tecnicos"].map((id, index) => {
                 const servicos = [
                   {
                     id: "residencial",
@@ -109,7 +103,7 @@ export default function App() {
                 const servico = servicos[index];
 
                 return (
-                  <div key={servico.id} id={servico.id}>
+                  <div key={servico.id}>
                     <img src={servico.image} alt={servico.title} className="rounded-xl mb-4 mx-auto max-w-full" />
                     <h3 className="text-xl font-bold mb-2">{servico.title}</h3>
                     {servico.paragraphs.map((text, i) => (
@@ -126,42 +120,15 @@ export default function App() {
           {/* Contato */}
           <section id="contato" className="mb-20">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Fale Conosco</h2>
-            <form
-              action="https://formsubmit.co/contato@rsengenharia.com.br"
-              method="POST"
-              className="flex flex-col gap-4 max-w-md mx-auto text-left"
+            <p className="mb-1">📧 contato@rsengenharia.com.br</p>
+            <p className="mb-4">📞 (51) 98031-8366</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5551980318366"
+              target="_blank"
+              className="inline-block bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
             >
-              <input
-                type="text"
-                name="name"
-                placeholder="Seu nome"
-                required
-                className="px-4 py-2 rounded text-black"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Seu e-mail"
-                required
-                className="px-4 py-2 rounded text-black"
-              />
-              <textarea
-                name="message"
-                placeholder="Sua mensagem"
-                rows="4"
-                required
-                className="px-4 py-2 rounded text-black"
-              />
-              <input type="text" name="_honey" style={{ display: "none" }} />
-              <input type="hidden" name="_next" value="https://rsengenharia.com.br/#contato" />
-              <button
-                type="submit"
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded"
-              >
-                Enviar
-              </button>
-            </form>
-            <p className="mt-4">📞 (51) 98031-8366</p>
+              Fale conosco no WhatsApp
+            </a>
           </section>
 
           {/* Projetos */}
