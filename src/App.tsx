@@ -36,7 +36,7 @@ export default function App() {
 
             <div className="space-y-12">
               {/* Serviços Individuais */}
-              {"residencial", "comercial", "industrial", "aumento-de-carga", "automacao", "laudos-tecnicos"].map((id, index) => {
+              ["residencial", "comercial", "industrial", "aumento-de-carga", "automacao", "laudos-tecnicos"].map((id, index) => {
                 const servicos = [
                   {
                     id: "residencial",
