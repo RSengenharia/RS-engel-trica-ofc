@@ -35,8 +35,14 @@ export default function App() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">Nossos Serviços</h2>
 
             <div className="space-y-12">
-              {/* Serviços Individuais */}
-              ["residencial", "comercial", "industrial", "aumento-de-carga", "automacao", "laudos-tecnicos"].map((id, index) => {
+              {[
+                "residencial",
+                "comercial",
+                "industrial",
+                "aumento-de-carga",
+                "automacao",
+                "laudos-tecnicos"
+              ].map((id, index) => {
                 const servicos = [
                   {
                     id: "residencial",
@@ -103,7 +109,7 @@ export default function App() {
                 const servico = servicos[index];
 
                 return (
-                  <div key={servico.id}>
+                  <div key={servico.id} id={servico.id}>
                     <img src={servico.image} alt={servico.title} className="rounded-xl mb-4 mx-auto max-w-full" />
                     <h3 className="text-xl font-bold mb-2">{servico.title}</h3>
                     {servico.paragraphs.map((text, i) => (
@@ -147,7 +153,7 @@ export default function App() {
                 className="px-4 py-2 rounded text-black"
               />
               <input type="text" name="_honey" style={{ display: "none" }} />
-              <input type="hidden" name="_next" value="https://rs-engel-trica-ofc.vercel.app/#contato" />
+              <input type="hidden" name="_next" value="https://rsengenharia.com.br/#contato" />
               <button
                 type="submit"
                 className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded"
